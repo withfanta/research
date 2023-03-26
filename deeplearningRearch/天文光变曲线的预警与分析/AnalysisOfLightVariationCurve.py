@@ -28,23 +28,27 @@ def imgSpilt(data_read,col_name1,col_name2,n):
     return x,y
 
 # 将获取一个二维列表，列表中的每一个元素都是50个x,y点对,并将50个点压缩至图片中间
-x1,y1 = imgSpilt(target_dara_read,'JD','Magnorm',50)
-x,y = imgSpilt(normal_data_read1,'JD','Magnorm',50)
-# print(y)
+x1,y1 = imgSpilt(target_dara_read,'JD','Magnorm',20)
+x,y = imgSpilt(normal_data_read1,'JD','Magnorm',20)
+print(y)
 for i in range(len(x)):
+    # plt.ylim(y1[i][0]-1, y1[i][0]+1)
+    # plt.scatter(x1[i], y1[i], label="targetstar", color="red")
+    # plt.plot(x1[i], y1[i], label="targetstar", color="red")
     # print(y[i][0])
-    # plt.ylim(y[i][0]-1, y[i][0]+1)
-    # plt.scatter(x[i], y[i], label="normalstar", color="blue")
-    plt.ylim(y1[i][0]-1, y1[i][0]+1)
-    plt.scatter(x1[i], y1[i], label="targetstar", color="red")
+    plt.ylim(y[i][0]-1, y[i][0]+1)
+    plt.scatter(x[i], y[i], label="normalstar", color="blue")
+    # plt.plot(x[i], y[i], label="normalstar", color="blue")
     plt.show()
-
+#
 # # 将获取两个个二维列表，列表中的每一个元素都是50个x,y点对，将两张图进行对比
 # x1,y1 = imgSpilt(target_dara_read,'JD','Magnorm',50)
 # x,y = imgSpilt(normal_data_read1,'JD','Magnorm',50)
 # for i in range(len(x)):
 #     plt.scatter(x[i], y[i], label="normalstar", color="blue")
 #     plt.scatter(x1[i], y1[i], label="targetstar", color="red")
+#     # plt.plot(x1[i], y1[i], label="targetstar", color="red")
+#     # plt.plot(x[i], y[i], label="normalstar", color="blue")
 #     plt.show()
 
 
