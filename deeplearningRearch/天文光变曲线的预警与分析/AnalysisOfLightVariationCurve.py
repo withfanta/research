@@ -59,7 +59,6 @@ target_x,target_y = imgSpilt(targetList,'JD','Magnorm',50)
 
 
 # 将获取一个二维列表，列表中的每一个元素都是50个x,y点对,并将50个点压缩至图片中间
-<<<<<<< HEAD
 x1,y1 = imgSpilt(target_dara_read,'JD','Magnorm',20)
 x,y = imgSpilt(normal_data_read1,'JD','Magnorm',20)
 print(y)
@@ -73,7 +72,6 @@ for i in range(len(x)):
     # plt.plot(x[i], y[i], label="normalstar", color="blue")
     plt.show()
 #
-=======
 # x1,y1 = imgSpilt(target_dara_read,'JD','Magnorm',50)
 # x,y = imgSpilt(normal_data_read1,'JD','Magnorm',50)
 # print(y)
@@ -118,7 +116,6 @@ for i in range(len(normal_x)-1):
     plt.cla()
 
 
->>>>>>> remotes/origin/deeplearning
 # # 将获取两个个二维列表，列表中的每一个元素都是50个x,y点对，将两张图进行对比
 # x1,y1 = imgSpilt(target_dara_read,'JD','Magnorm',50)
 # x,y = imgSpilt(normal_data_read1,'JD','Magnorm',50)
